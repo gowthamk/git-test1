@@ -3,7 +3,7 @@
 $.ajax({
     type: "POST",
     url: url,
-    data: sha256(data),
+    data: data,
     success: function(response) {
         $(".result").html(response);
     }),
